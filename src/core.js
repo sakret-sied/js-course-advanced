@@ -10,12 +10,12 @@ export default class Core {
       return;
     }
 
-    const selector = this.#addSelector();
+    const selector = this.#addSelectorToDocument();
     this.#addOptionsToSelector(selector);
     this.#addEventListenerToSelector(selector);
   }
 
-  #addSelector() {
+  #addSelectorToDocument() {
     const selector = document.createElement('select');
     selector.id = this.selectorId;
     this.container.insertAdjacentElement('beforeend', selector);
