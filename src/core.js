@@ -23,22 +23,22 @@ export default class Core {
   }
 
   #addOptionsToSelector(select) {
-    const selectLocalStorage = this.#getDefaultSelector();
+    const defaultSelector = this.#getDefaultSelector();
     this.modules.forEach((_, index) => {
       const option = document.createElement('option');
       option.id = option.innerText = index;
-      option.selected = index === selectLocalStorage ? 'selected' : '';
+      option.selected = index === defaultSelector ? 'selected' : '';
       select.insertAdjacentElement('beforeend', option);
     });
 
-    this.modules.get(selectLocalStorage).exec();
+    this.modules.get(defaultSelector).execute();
   }
 
   #addEventListenerToSelector(select) {
     select.addEventListener('change', (e) => {
       console.clear();
       this.#setDefaultSelector(e.target.value);
-      this.modules.get(e.target.value).exec();
+      this.modules.get(e.target.value).execute();
     });
   }
 

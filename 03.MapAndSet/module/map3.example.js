@@ -1,5 +1,5 @@
 export default class Map3Example {
-  static exec() {
+  static execute() {
     const weatherMap = new Map([
       ['London', 10],
       ['Moscow', 7],

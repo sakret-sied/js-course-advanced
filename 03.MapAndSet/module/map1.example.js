@@ -1,5 +1,5 @@
 export default class Map1Example {
-  static exec() {
+  static execute() {
     const weatherMap = new Map();
     weatherMap.set('Lindon', 10).set('Moscow', 7);
 

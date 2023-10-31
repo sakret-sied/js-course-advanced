@@ -1,5 +1,5 @@
 export default class WeakSetExample {
-  static exec() {
+  static execute() {
     let a = { a: 1 };
     let b = { b: 2 };
     const set = new WeakSet([a, b]);

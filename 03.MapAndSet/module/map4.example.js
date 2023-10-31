@@ -1,5 +1,5 @@
 export default class Map4Example {
-  static exec() {
+  static execute() {
     let weatherMap = new Map([
       ['London', 10],
       ['Moscow', 7],

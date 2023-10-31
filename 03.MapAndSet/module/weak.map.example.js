@@ -1,5 +1,5 @@
 export default class WeakMapExample {
-  static exec() {
+  static execute() {
     let a = { a: 1 };
     let b = { b: 1 };
     const map = new WeakMap();

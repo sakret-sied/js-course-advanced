@@ -1,5 +1,5 @@
 export default class SetExample {
-  static exec() {
+  static execute() {
     const flights = ['Russia', 'USA', 'London', 'London', 'USA'];
 
     const setFlights = new Set(flights);
