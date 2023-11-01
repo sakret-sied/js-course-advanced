@@ -1,9 +1,10 @@
 export default class Core {
-  container = document.querySelector('#app');
-  modules = new Map();
-  selectorId = 'module-selector';
-
-  constructor() {}
+  constructor() {
+    this.container = document.querySelector('#app');
+    this.modules = new Map();
+    this.selectorId = 'module-selector';
+    this.selectorKey = 'selectorBasic';
+  }
 
   init() {
     if (this.modules.size === 0) {
@@ -42,11 +43,15 @@ export default class Core {
     });
   }
 
-  #setDefaultSelector(value) {
-    localStorage.setItem('select', value);
+  #setDefaultSelector(selectorValue) {
+    localStorage.setItem(this.selectorKey, selectorValue);
   }
 
   #getDefaultSelector() {
-    return localStorage.getItem('select') ?? this.modules.values().next().key;
+    const selectorStorage = localStorage.getItem(this.selectorKey);
+    const firstModule = this.modules.keys().next().value;
+    return selectorStorage && this.modules.get(selectorStorage)
+      ? selectorStorage
+      : firstModule;
   }
 }

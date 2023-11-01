@@ -11,13 +11,14 @@ class App extends Core {
   constructor() {
     super();
     this.modules
-      .set('Map1Example', Map1Example)
-      .set('Map2Example', Map2Example)
-      .set('Map3Example', Map3Example)
-      .set('Map4Example', Map4Example)
-      .set('SetExample', SetExample)
-      .set('WeakMapExample', WeakMapExample)
-      .set('WeakSetExample', WeakSetExample);
+      .set(Map1Example.name, Map1Example)
+      .set(Map2Example.name, Map2Example)
+      .set(Map3Example.name, Map3Example)
+      .set(Map4Example.name, Map4Example)
+      .set(SetExample.name, SetExample)
+      .set(WeakMapExample.name, WeakMapExample)
+      .set(WeakSetExample.name, WeakSetExample);
+    this.selectorKey = 'selectorMapAndSet';
   }
 }
 
