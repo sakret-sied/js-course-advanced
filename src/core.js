@@ -1,9 +1,12 @@
 export default class Core {
   constructor() {
     this.container = document.querySelector('#app');
-    this.modules = new Map();
-    this.selectorId = 'module-selector';
-    this.selectorKey = 'selectorBasic';
+    this.selectorKey = this.constructor.name.replace('App', 'selector');
+    this.selectorId = this.selectorKey.replace(/([A-Z])/g, '-$1').toLowerCase();
+  }
+
+  setModules(modules) {
+    this.modules = new Map(modules.map((module) => [module.name, module]));
   }
 
   init() {
