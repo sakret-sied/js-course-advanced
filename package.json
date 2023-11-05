@@ -1,0 +1,15 @@
+{
+  "name": "jscourseadvanced",
+  "version": "1.0.0",
+  "description": "JavaScript cource advanced",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SakretSied/JsCourseAdvanced.git"
+  },
+  "author": "SakretSied",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SakretSied/JsCourseAdvanced/issues"
+  },
+  "homepage": "https://github.com/SakretSied/JsCourseAdvanced#readme"
+}
