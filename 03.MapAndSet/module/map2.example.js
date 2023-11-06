@@ -1,5 +1,7 @@
-export default class Map2Example {
-  static execute() {
+import Module from '../../src/module.js';
+
+export default class Map2Example extends Module {
+  execute() {
     const weatherMap = new Map([
       ['London', 10],
       ['Moscow', 7],

@@ -1,5 +1,7 @@
-export default class ExampleBigInt {
-  static execute() {
+import Module from '../../src/module.js';
+
+export default class ExampleBigInt extends Module {
+  execute() {
     const max = 2 ** 53 - 1;
     console.log(Number.MAX_SAFE_INTEGER);
     console.log(Number.MIN_SAFE_INTEGER);

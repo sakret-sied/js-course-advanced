@@ -1,5 +1,7 @@
-export default class ConversionNumber {
-  static execute() {
+import Module from '../../src/module.js';
+
+export default class ConversionNumber extends Module {
+  execute() {
     console.log(10 === 10.0);
 
     console.log(0.1 + 0.2 === 0.3);

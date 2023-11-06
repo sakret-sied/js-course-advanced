@@ -1,5 +1,7 @@
-export default class LibraryMath {
-  static execute() {
+import Module from '../../src/module.js';
+
+export default class LibraryMath extends Module {
+  execute() {
     console.log(Math.sqrt(36));
     console.log(36 ** (1 / 2));
     console.log(Math.cbrt(27));

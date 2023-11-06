@@ -1,5 +1,7 @@
-export default class WeakSetExample {
-  static execute() {
+import Module from '../../src/module.js';
+
+export default class WeakSetExample extends Module {
+  execute() {
     let a = { a: 1 };
     let b = { b: 2 };
     const set = new WeakSet([a, b]);

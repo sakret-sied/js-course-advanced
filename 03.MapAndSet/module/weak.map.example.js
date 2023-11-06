@@ -1,5 +1,7 @@
-export default class WeakMapExample {
-  static execute() {
+import Module from '../../src/module.js';
+
+export default class WeakMapExample extends Module {
+  execute() {
     let a = { a: 1 };
     let b = { b: 1 };
     const map = new WeakMap();

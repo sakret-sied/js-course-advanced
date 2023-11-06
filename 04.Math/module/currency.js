@@ -1,21 +1,23 @@
-export default class Currency {
-  static eur = 'EUR';
-  static rub = 'RUB';
-  static usd = 'USD';
-  static currencies = new Map([
-    [Currency.eur, 100],
-    [Currency.rub, 1],
-    [Currency.usd, 90],
+import Module from '../../src/module.js';
+
+export default class Currency extends Module {
+  eur = 'EUR';
+  rub = 'RUB';
+  usd = 'USD';
+  currencies = new Map([
+    [this.eur, 100],
+    [this.rub, 1],
+    [this.usd, 90],
   ]);
 
-  static execute() {
-    console.log(Currency.convert(5000, Currency.eur, Currency.usd));
-    console.log(Currency.convert(10000, Currency.rub, Currency.eur));
-    console.log(Currency.convert(3000, Currency.usd, Currency.rub));
-    console.log(Currency.convert(3000, 'BLA', Currency.rub));
+  execute() {
+    console.log(this.convert(5000, this.eur, this.usd));
+    console.log(this.convert(10000, this.rub, this.eur));
+    console.log(this.convert(3000, this.usd, this.rub));
+    console.log(this.convert(3000, 'BLA', this.rub));
   }
 
-  static convert(sum, originalCurrency, finalCurrency) {
+  convert(sum, originalCurrency, finalCurrency) {
     const original = this.currencies.get(originalCurrency);
     const final = this.currencies.get(finalCurrency);
     if (!original || !final) {

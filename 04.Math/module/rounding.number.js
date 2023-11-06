@@ -1,5 +1,7 @@
-export default class RoundingNumber {
-  static execute() {
+import Module from '../../src/module.js';
+
+export default class RoundingNumber extends Module {
+  execute() {
     console.log(Math.round(1.4));
     console.log(Math.round(1.6));
     console.log(Math.round(1.499999));

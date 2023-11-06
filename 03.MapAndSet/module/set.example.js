@@ -1,5 +1,7 @@
-export default class SetExample {
-  static execute() {
+import Module from '../../src/module.js';
+
+export default class SetExample extends Module {
+  execute() {
     const flights = ['Russia', 'USA', 'London', 'London', 'USA'];
 
     const setFlights = new Set(flights);

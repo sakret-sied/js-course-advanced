@@ -1,5 +1,7 @@
-export default class Map1Example {
-  static execute() {
+import Module from '../../src/module.js';
+
+export default class Map1Example extends Module {
+  execute() {
     const weatherMap = new Map();
     weatherMap.set('Lindon', 10).set('Moscow', 7);
 

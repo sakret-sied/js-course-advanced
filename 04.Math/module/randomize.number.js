@@ -1,9 +1,11 @@
-export default class RandomizeNumber {
-  static execute() {
-    console.log(RandomizeNumber.rand(1, 20));
+import Module from '../../src/module.js';
+
+export default class RandomizeNumber extends Module {
+  execute() {
+    console.log(this.rand(1, 20));
   }
 
-  static rand(min, max) {
+  rand(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 }

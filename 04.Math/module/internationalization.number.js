@@ -1,5 +1,7 @@
-export default class InternationalizationNumber {
-  static execute() {
+import Module from '../../src/module.js';
+
+export default class InternationalizationNumber extends Module {
+  execute() {
     const options1 = {
       style: 'currency',
       currency: 'RUB',

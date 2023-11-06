@@ -1,5 +1,7 @@
-export default class SeparatorNumber {
-  static execute() {
+import Module from '../../src/module.js';
+
+export default class SeparatorNumber extends Module {
+  execute() {
     const bigNum1 = 350_500_000;
     console.log(bigNum1);
     const bigNum2 = 350500000;

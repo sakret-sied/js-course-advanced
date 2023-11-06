@@ -1,5 +1,7 @@
-export default class Remainder {
-  static execute() {
+import Module from '../../src/module.js';
+
+export default class Remainder extends Module {
+  execute() {
     console.log(15 / 2);
     console.log(15 % 2);
     console.log(14 % 2);

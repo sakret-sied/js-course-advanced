@@ -1,3 +1,5 @@
+import Module from './module.js';
+
 export default class Core {
   constructor() {
     this.container = document.querySelector('#app');
@@ -6,7 +8,10 @@ export default class Core {
   }
 
   setModules(modules) {
-    this.modules = new Map(modules.map((module) => [module.name, module]));
+    const checkedModules = modules
+      .map((module) => [module.name, new module()])
+      .filter((module) => module[1] instanceof Module);
+    this.modules = new Map(checkedModules);
   }
 
   init() {
