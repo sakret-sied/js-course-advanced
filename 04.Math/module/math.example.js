@@ -1,6 +1,6 @@
 import Module from '../../src/module.js';
 
-export default class LibraryMath extends Module {
+export default class MathExample extends Module {
   execute() {
     console.log(Math.sqrt(36));
     console.log(36 ** (1 / 2));

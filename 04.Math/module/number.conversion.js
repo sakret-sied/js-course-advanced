@@ -1,6 +1,6 @@
 import Module from '../../src/module.js';
 
-export default class ConversionNumber extends Module {
+export default class NumberConversion extends Module {
   execute() {
     console.log(10 === 10.0);
 

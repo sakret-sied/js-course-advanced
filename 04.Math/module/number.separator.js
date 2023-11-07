@@ -1,6 +1,6 @@
 import Module from '../../src/module.js';
 
-export default class SeparatorNumber extends Module {
+export default class NumberSeparator extends Module {
   execute() {
     const bigNum1 = 350_500_000;
     console.log(bigNum1);

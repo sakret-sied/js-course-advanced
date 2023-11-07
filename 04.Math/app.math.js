@@ -1,27 +1,27 @@
-import ConversionNumber from './module/conversion.number.js';
 import Core from '../src/core.js';
+import BigIntExample from './module/bigint.example.js';
 import Currency from './module/currency.js';
-import ExampleBigInt from './module/example.bigint.js';
-import InternationalizationNumber from './module/internationalization.number.js';
-import LibraryMath from './module/library.math.js';
-import RandomizeNumber from './module/randomize.number.js';
+import MathExample from './module/math.example.js';
+import NumberConversion from './module/number.conversion.js';
+import NumberInternationalization from './module/number.internationalization.js';
+import NumberRandomize from './module/number.randomize.js';
+import NumberRounding from './module/number.rounding.js';
+import NumberSeparator from './module/number.separator.js';
 import Remainder from './module/remainder.js';
-import RoundingNumber from './module/rounding.number.js';
-import SeparatorNumber from './module/separator.number.js';
 
 class AppMath extends Core {
   constructor() {
     super();
     this.setModules([
-      ConversionNumber,
+      BigIntExample,
       Currency,
-      ExampleBigInt,
-      InternationalizationNumber,
-      LibraryMath,
-      RandomizeNumber,
+      MathExample,
+      NumberConversion,
+      NumberInternationalization,
+      NumberRandomize,
+      NumberRounding,
+      NumberSeparator,
       Remainder,
-      RoundingNumber,
-      SeparatorNumber,
     ]);
   }
 }

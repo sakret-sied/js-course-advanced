@@ -1,6 +1,6 @@
 import Module from '../../src/module.js';
 
-export default class RandomizeNumber extends Module {
+export default class NumberRandomize extends Module {
   execute() {
     console.log(this.rand(1, 20));
   }

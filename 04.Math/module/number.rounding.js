@@ -1,6 +1,6 @@
 import Module from '../../src/module.js';
 
-export default class RoundingNumber extends Module {
+export default class NumberRounding extends Module {
   execute() {
     console.log(Math.round(1.4));
     console.log(Math.round(1.6));

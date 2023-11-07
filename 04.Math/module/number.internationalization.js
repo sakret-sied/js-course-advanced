@@ -1,6 +1,6 @@
 import Module from '../../src/module.js';
 
-export default class InternationalizationNumber extends Module {
+export default class NumberInternationalization extends Module {
   execute() {
     const options1 = {
       style: 'currency',
