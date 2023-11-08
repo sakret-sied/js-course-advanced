@@ -1,15 +1,18 @@
 {
-  "name": "jscourseadvanced",
-  "version": "1.0.0",
+  "name": "js-course-advanced",
+  "version": "1.6.0",
   "description": "JavaScript cource advanced",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SakretSied/JsCourseAdvanced.git"
+    "url": "git+https://github.com/sakret-sied/js-course-advanced.git"
   },
-  "author": "SakretSied",
+  "author": "sakret-sied",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SakretSied/JsCourseAdvanced/issues"
+    "url": "https://github.com/sakret-sied/js-course-advanced/issues"
   },
-  "homepage": "https://github.com/SakretSied/JsCourseAdvanced#readme"
+  "homepage": "https://github.com/sakret-sied/js-course-advanced#readme",
+  "dependencies": {
+    "js-little-core": "github:sakret-sied/js-little-core"
+  }
 }

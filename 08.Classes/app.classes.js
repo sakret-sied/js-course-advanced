@@ -1,12 +1,12 @@
-import Core from '../src/core.js';
-import ClassesExample from './module/classes.example.js';
-import ObjectCreate from './module/object.create.js';
-import PrivateExample from './module/private.example.js';
-import SettersAndGetters from './module/setters.and.getters.js';
-import StaticExample from './module/static.example.js';
-import UserClass from './module/user.class.js';
+import ClassesExample from './modules/classes.example.js';
+import LittleCore from '/node_modules/js-little-core/little.core.js';
+import ObjectCreate from './modules/object.create.js';
+import PrivateExample from './modules/private.example.js';
+import SettersAndGetters from './modules/setters.and.getters.js';
+import StaticExample from './modules/static.example.js';
+import UserClass from './modules/user.class.js';
 
-class AppClasses extends Core {
+class AppClasses extends LittleCore {
   constructor() {
     super();
     this.setModules([

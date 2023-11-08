@@ -1,15 +1,15 @@
-import Core from '../src/core.js';
-import BigIntExample from './module/bigint.example.js';
-import Currency from './module/currency.js';
-import MathExample from './module/math.example.js';
-import NumberConversion from './module/number.conversion.js';
-import NumberInternationalization from './module/number.internationalization.js';
-import NumberRandomize from './module/number.randomize.js';
-import NumberRounding from './module/number.rounding.js';
-import NumberSeparator from './module/number.separator.js';
-import Remainder from './module/remainder.js';
+import BigIntExample from './modules/bigint.example.js';
+import Currency from './modules/currency.js';
+import MathExample from './modules/math.example.js';
+import NumberConversion from './modules/number.conversion.js';
+import NumberInternationalization from './modules/number.internationalization.js';
+import NumberRandomize from './modules/number.randomize.js';
+import NumberRounding from './modules/number.rounding.js';
+import NumberSeparator from './modules/number.separator.js';
+import Remainder from './modules/remainder.js';
+import LittleCore from '/node_modules/js-little-core/little.core.js';
 
-class AppMath extends Core {
+class AppMath extends LittleCore {
   constructor() {
     super();
     this.setModules([
