@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/sakret-sied/js-course-advanced#readme",
   "dependencies": {
-    "js-little-core": "github:sakret-sied/js-little-core"
+    "js-little-core": "github:sakret-sied/js-little-core",
+    "prettier": "^3.0.3"
   }
 }
