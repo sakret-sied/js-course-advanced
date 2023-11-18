@@ -7,12 +7,12 @@ export default class SelectCategory extends Module {
       .then((data) => {
         console.log(data);
         const select = document.createElement('select');
-        this.content.appendChild(select);
+        this.content.append(select);
 
         data.forEach((category) => {
           const option = document.createElement('option');
-          option.value = option.innerText = category;
-          select.appendChild(option);
+          option.value = option.textContent = category;
+          select.append(option);
         });
       });
   }
