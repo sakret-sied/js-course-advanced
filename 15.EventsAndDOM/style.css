@@ -1,0 +1,16 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border: 1px solid #333;
+    border-radius: 1rem; 
+}
+
+.wrapper > div {
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 1rem;
+}
