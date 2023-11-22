@@ -2,6 +2,7 @@
   "name": "js-course-advanced",
   "version": "1.14.0",
   "description": "JavaScript cource advanced",
+  "main": "",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sakret-sied/js-course-advanced.git"
@@ -13,7 +14,9 @@
   },
   "homepage": "https://github.com/sakret-sied/js-course-advanced#readme",
   "dependencies": {
-    "js-little-core": "github:sakret-sied/js-little-core",
-    "prettier": "^3.0.3"
+    "js-little-core": "github:sakret-sied/js-little-core"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.0"
   }
 }
